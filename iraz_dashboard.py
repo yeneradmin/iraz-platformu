@@ -915,12 +915,12 @@ def admin_panel():
 def load_musteri_alis_data():
     try:
         conn = pymssql.connect(
-            'DRIVER={SQL Server};'
-            'SERVER=IRAZOTOMOTIV;'
-            'DATABASE=LOGOGO3;'
-            'UID=sa;'
-            'PWD=Logo12345678;'
-        )
+            server="sql.irazoto.com",  # ✅ Cloudflare Tunnel URL
+            database="LOGOGO3",
+            user="sa",
+            password="Logo12345678", 
+            port=1433
+    )
         
         musteri_sorgu = """
         SELECT 
@@ -1555,4 +1555,5 @@ if __name__ == "__main__":
         unsafe_allow_html=True
 
     )
+
 
