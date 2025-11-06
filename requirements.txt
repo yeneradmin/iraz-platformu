@@ -1,6 +1,5 @@
-streamlit
-pandas
-pymssql
-plotly
-numpy
-requests
+streamlit==1.28.0
+pandas==2.0.3
+plotly==5.15.0
+pyodbc==4.0.39
+numpy==1.24.3
