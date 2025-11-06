@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pyodbc
+import pymssgl
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime, timedelta
@@ -1553,4 +1553,5 @@ if __name__ == "__main__":
         "Mobil Optimize | MAC Güvenlik Sistemi | Yapay Zeka Destekli"
         "</div>",
         unsafe_allow_html=True
+
     )
