@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pymssgl
+import pymssql
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime, timedelta
@@ -914,7 +914,7 @@ def admin_panel():
 @st.cache_data
 def load_musteri_alis_data():
     try:
-        conn = pyodbc.connect(
+        conn = pymssql.connect(
             'DRIVER={SQL Server};'
             'SERVER=IRAZOTOMOTIV;'
             'DATABASE=LOGOGO3;'
@@ -1555,3 +1555,4 @@ if __name__ == "__main__":
         unsafe_allow_html=True
 
     )
+
