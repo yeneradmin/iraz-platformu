@@ -1,6 +1,6 @@
 streamlit
 pandas
-pyodbc
+pymssql
 plotly
 numpy
 requests
